@@ -1,0 +1,145 @@
+*********************FINAL PROJECT ARCHITECTURE****************************
+multi_modal_agentic_ai/
+│
+├── app/
+│   ├── api/
+│   ├── ui/
+│   ├── agents/
+│   ├── speech/
+│   ├── sign_language/
+│   ├── llm/
+│   ├── tts/
+│   ├── utils/
+│   └── main.py
+│
+├── models/
+│
+├── datasets/
+│
+├── notebooks/
+│
+├── tests/
+│
+├── requirements/
+│
+├── venv/
+│
+├── .env
+│
+├── README.md
+│
+└── requirements.txt
+
+
+*********************SIGN LANGUAGE DETECTION****************************
+    Understand Pipeline
+
+          Video
+            ↓
+        Frame Extraction
+            ↓
+        Hand Detection
+            ↓
+        Landmark Extraction
+            ↓
+        Gesture Classification
+            ↓
+        Text Output
+
+*********************FINAL FLOW****************************
+User Uploads Audio
+↓
+Speech-to-Text
+↓
+LLM Processing
+↓
+Text Output
+↓
+Text-to-Speech
+↓
+Voice Response
+
+*********************SIGN LANGUAGE FLOW****************************
+Video
+↓
+OpenCV Frames
+↓
+MediaPipe Landmarks
+↓
+Gesture Classifier
+↓
+Sentence Generation
+↓
+Speech Output
+
+
+
+ASL Images
+   ↓
+MediaPipe Hand Landmark Extraction
+   ↓
+Feature Vector Creation
+   ↓
+Train ML Model
+   ↓
+Predict Gesture
+   ↓
+Convert to Text
+
+*********************LSTM FOR VIDEO****************************
+Video Frames
+↓
+Landmarks Per Frame
+↓
+Sequence
+↓
+LSTM
+↓
+Word Prediction
+
+*********************LSTM FOR VIDEO****************************
+Video Frames
+↓
+Landmarks Per Frame
+↓
+Sequence
+↓
+LSTM
+↓
+Word Prediction
+
+*********************TRAIN THE SIGN LANGUAGE AI MODEL****************************
+Landmark CSV
+   ↓
+Train AI Model
+   ↓
+Save Trained Model
+   ↓
+Use For Real-Time Prediction
+
+
+****************************TIME SIGN LANGUAGE PREDICTION****************************
+Webcam
+↓
+Hand Tracking
+↓
+Landmarks
+↓
+AI Prediction
+↓
+Display Letter
+
+****************************LIVE WEBCAM AI DETECTION****************************
+Webcam
+↓
+OpenCV Frame Capture
+↓
+MediaPipe Hand Detection
+↓
+Landmark Extraction
+↓
+RandomForest Prediction
+↓
+Display ASL Letter
+
+

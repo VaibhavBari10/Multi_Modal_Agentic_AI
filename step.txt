@@ -1,0 +1,22 @@
+py -3.10 -m venv venv
+venv\Scripts\activate
+python -m pip install --upgrade pip setuptools wheel packaging
+mkdir app,models,datasets,notebooks,tests,requirements; mkdir app\api,app\ui,app\agents,app\speech,app\sign_language,app\llm,app\tts,app\utils
+ni README.md,requirements.txt,.env,app\main.py
+pip install fastapi uvicorn streamlit
+pip install opencv-python mediapipe pillow
+pip install torch torchvision torchaudio
+pip install openai-whisper
+ffmpeg -version
+pip install langchain crewai transformers sentencepiece
+pip install pyttsx3
+pip install TTS
+pip freeze > requirements.txt
+tree /F /A > structure.txt  
+ni app\sign_language\extract_landmarks.py, app\sign_language\train_classifier.py, app\sign_language\predict.py, app\sign_language\classifier.py, app\sign_language\labels.txt 
+Get-ChildItem -Recurse -Filter test_tts.py
+python -m tests.test_tts
+python -m app.sign_language.predict
+pip install streamlit-webrtc av
+pip install pyttsx3 pypiwin32
+streamlit run app/ui/streamlit_app.py
