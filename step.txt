@@ -20,3 +20,19 @@ python -m app.sign_language.predict
 pip install streamlit-webrtc av
 pip install pyttsx3 pypiwin32
 streamlit run app/ui/streamlit_app.py
+python -m tests.test_llm
+python -m tests.test_router
+python app/dynamic_sign/collect_sequences.py
+python app/dynamic_sign/train_lstm.py  
+python app/dynamic_sign/predict_lstm.pysss
+streamlit run app/ui/streamlit_app.py
+python ingest_documents.py
+python -m tests.test_rag
+python -m tests.test_full_agentic_ai
+ollama pull phi3:mini
+pip install pyautogui
+python -m tests.test_action_agent
+python -m app.voice_assistant.assistant_loop
+python -m tests.test_planner
+python -m tests.test_full_agentic_ai
+python -m streamlit run app/ui/streamlit_app.py
