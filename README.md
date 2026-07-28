@@ -16,9 +16,9 @@
 
 # 📖 Overview
 
-**Multi Modal Agentic AI** is an intelligent AI assistant that combines multiple AI capabilities into one application. Users can interact naturally through voice or text while leveraging state-of-the-art Large Language Models (LLMs), multilingual translation, speech synthesis, voice cloning, and avatar generation.
+**Multi Modal Agentic AI** is an intelligent AI assistant that combines multiple AI capabilities into a single application. It enables users to communicate naturally using voice or text while leveraging state-of-the-art Large Language Models (LLMs), multilingual translation, speech synthesis, voice cloning, and avatar generation.
 
-This project demonstrates how modern AI technologies can be integrated to build a complete multimodal conversational assistant with an intuitive user interface.
+The project demonstrates how modern AI technologies can work together to build a complete multimodal conversational assistant with an interactive Streamlit interface.
 
 ---
 
@@ -42,17 +42,50 @@ This project demonstrates how modern AI technologies can be integrated to build 
 
 Watch the complete testing video demonstrating the application's features.
 
-▶️ **Demo Video:** https://drive.google.com/file/d/180lujuwtvPwdu2h4k2Clkef66pFRSDM9/view?usp=sharing
+🎬 **Demo Video:**  
+https://drive.google.com/file/d/180lujuwtvPwdu2h4k2Clkef66pFRSDM9/view?usp=sharing
 
 ### Demo Includes
 
-- Speech-to-Text
-- AI Chat
-- Language Translation
-- Text-to-Speech
-- Voice Cloning
-- Avatar Generation
-- End-to-End AI Workflow
+- 🎤 Speech-to-Text
+- 🤖 AI Chat with Google Gemini
+- 🌍 Language Translation
+- 🔊 Text-to-Speech
+- 🗣️ Voice Cloning
+- 👤 AI Avatar Generation
+- ⚡ End-to-End AI Workflow
+
+---
+
+# 📂 Dataset
+
+The dataset used in this project is too large to be included in the GitHub repository.
+
+📥 **Download Dataset:**  
+**https://YOUR_DATASET_GOOGLE_DRIVE_LINK**
+
+> **Instructions**
+>
+> 1. Download the dataset from the link above.
+> 2. Extract it if it is compressed.
+> 3. Place the extracted files inside the `dataset/` directory.
+
+Expected folder structure:
+
+```text
+Multi_Modal_Agentic_AI/
+│
+├── dataset/
+│   ├── train/
+│   ├── test/
+│   ├── validation/
+│   └── ...
+│
+├── app.py
+├── main.py
+├── requirements.txt
+└── README.md
+```
 
 ---
 
@@ -91,28 +124,28 @@ Watch the complete testing video demonstrating the application's features.
 
 # 📂 Project Structure
 
-```
+```text
 Multi_Modal_Agentic_AI/
-│
-├── demo/
-│   └── testing_video.mp4
 │
 ├── app.py
 ├── main.py
 ├── requirements.txt
-├── .env
+├── .env.example
 ├── README.md
+├── LICENSE
 │
 ├── audio/
 ├── avatars/
+├── dataset/
 ├── images/
 ├── models/
+├── notebooks/
 ├── output/
 ├── static/
 ├── templates/
 ├── utils/
 │
-└── notebooks/
+└── screenshots/
 ```
 
 ---
@@ -126,7 +159,7 @@ Multi_Modal_Agentic_AI/
 ## AI Models
 
 - Google Gemini
-- Whisper
+- OpenAI Whisper
 - MarianMT
 - XTTS
 
@@ -145,14 +178,14 @@ Multi_Modal_Agentic_AI/
 - Pandas
 - python-dotenv
 - TTS
-- ffmpeg
+- FFmpeg
 - gTTS
 
 ---
 
 # ⚙️ Installation
 
-## Clone Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/VaibhavBari10/Multi_Modal_Agentic_AI.git
@@ -190,7 +223,7 @@ pip install -r requirements.txt
 
 ---
 
-# 🔑 Environment Variables
+## Configure Environment Variables
 
 Create a `.env` file in the project root.
 
@@ -218,42 +251,37 @@ python main.py
 
 # 🚀 Workflow
 
-1. User provides speech or text input.
+1. User provides voice or text input.
 2. Whisper converts speech into text.
 3. Google Gemini processes the request.
 4. Optional language translation is performed.
 5. AI generates an intelligent response.
 6. Response is converted into speech.
-7. Voice cloning generates personalized audio.
-8. Avatar is created.
-9. Final multimodal response is displayed.
+7. Voice cloning creates personalized audio.
+8. Avatar is generated.
+9. Final multimodal output is displayed.
 
 ---
 
 # 📸 Screenshots
 
-Add screenshots here.
+Add screenshots inside the `screenshots/` folder.
 
-```
+```text
 screenshots/
-
-home.png
-
-chat.png
-
-speech_to_text.png
-
-translation.png
-
-tts.png
-
-avatar.png
+│
+├── home.png
+├── speech_to_text.png
+├── translation.png
+├── chat.png
+├── tts.png
+└── avatar.png
 ```
 
 Example:
 
 ```markdown
-## Home Page
+## Home
 
 ![Home](screenshots/home.png)
 
@@ -273,9 +301,9 @@ Example:
 - AI Virtual Assistant
 - Smart Customer Support
 - Language Learning
-- Accessibility Applications
-- Voice-Based Interaction
-- Educational AI
+- Accessibility Solutions
+- Voice-Based Applications
+- Educational AI Systems
 - AI Avatar Demonstrations
 - Multilingual Communication
 
@@ -283,15 +311,15 @@ Example:
 
 # 📈 Future Enhancements
 
-- RAG (Retrieval-Augmented Generation)
+- Retrieval-Augmented Generation (RAG)
 - Vector Database Integration
 - Long-Term Memory
 - Multi-Agent Collaboration
 - Video Generation
 - Face Animation
-- Docker Deployment
-- Cloud Deployment (AWS/Azure/GCP)
-- REST API
+- Docker Support
+- Cloud Deployment (AWS, Azure, GCP)
+- REST API Development
 - User Authentication
 
 ---
@@ -306,7 +334,7 @@ This project demonstrates practical implementation of:
 - LangChain
 - Google Gemini API
 - Speech Recognition
-- NLP
+- Natural Language Processing
 - Translation Models
 - Voice Cloning
 - Streamlit Development
@@ -319,27 +347,26 @@ This project demonstrates practical implementation of:
 
 Contributions are welcome!
 
-1. Fork the repository
-
-2. Create a feature branch
+1. Fork this repository.
+2. Create a new feature branch.
 
 ```bash
 git checkout -b feature-name
 ```
 
-3. Commit changes
+3. Commit your changes.
 
 ```bash
-git commit -m "Added new feature"
+git commit -m "Add new feature"
 ```
 
-4. Push changes
+4. Push your branch.
 
 ```bash
 git push origin feature-name
 ```
 
-5. Open a Pull Request
+5. Open a Pull Request.
 
 ---
 
@@ -348,14 +375,14 @@ git push origin feature-name
 - Python 3.11+
 - Google Gemini API Key
 - FFmpeg Installed
-- Microphone (for speech input)
+- Microphone (for Speech Input)
 - Internet Connection
 
 ---
 
 # 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -363,7 +390,7 @@ This project is licensed under the MIT License.
 
 ## Vaibhav Bari
 
-AI & Data Science Enthusiast
+**AI & Data Science Enthusiast**
 
 - GitHub: https://github.com/VaibhavBari10
 - LinkedIn: https://www.linkedin.com/in/vaibhav-bari10/
@@ -372,17 +399,15 @@ AI & Data Science Enthusiast
 
 # ⭐ Support
 
-If you found this project useful, please consider:
+If you found this project useful:
 
-⭐ Star this repository
-
-🍴 Fork the repository
-
-📢 Share it with others
+- ⭐ Star this repository
+- 🍴 Fork this repository
+- 📢 Share it with others
 
 ---
 
-## 🙏 Acknowledgements
+# 🙏 Acknowledgements
 
 Special thanks to the open-source community and the developers of:
 
@@ -397,8 +422,8 @@ Special thanks to the open-source community and the developers of:
 
 <p align="center">
 
-### ⭐ If you like this project, don't forget to Star the Repository ⭐
+## ⭐ If you like this project, don't forget to Star the Repository! ⭐
 
-Made with ❤️ by **Vaibhav Bari**
+Made with ❤️ by <strong>Vaibhav Bari</strong>
 
 </p>
