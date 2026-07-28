@@ -42,7 +42,7 @@ This project demonstrates how modern AI technologies can be integrated to build 
 
 Watch the complete testing video demonstrating the application's features.
 
-▶️ **Demo Video:** [Watch Demo](demo/testing_video.mp4)
+▶️ **Demo Video:** https://drive.google.com/file/d/180lujuwtvPwdu2h4k2Clkef66pFRSDM9/view?usp=sharing
 
 ### Demo Includes
 
